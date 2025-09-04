@@ -68,21 +68,12 @@ getPostponedData = async ()=> {
 
 				let ppFxtrs = tmpArr[0]['unplanned'] ; 
 				let rpFxtrs = tmpArr[1]['re-planned'] ; 
-				/* 
-				let iBreaks = tmpArr[4]['evtp-UIB'] ; 
-				let evTpEFL = tmpArr[6]['evtp-EFL'] ;
-				let evTpFAC = tmpArr[5]['evtp-FAC'] ;
-				let evTpECL = tmpArr[7]["evtp-ECL"]
-				console.log(getCI(), "getPostponedData evTpFAC:", evTpFAC.length );
-				*/
 
 				gamesOverview.postponedGames 	= [] ; 
 				gamesOverview.postponedGameIds 	= [] ; 
 				gamesOverview.replannedGames 	= [] ; 
 				gamesOverview.replannedGamesIds = [] ; 
 				gamesOverview.iBreaks 			= [] ; 
-				
-				// for(let br = 0; br < iBreaks.length; br++){ gamesOverview.iBreaks.push( iBreaks[br] ); }
 
 				for(let bl = 0; bl < ppFxtrs.length ; bl++ ){
 
@@ -91,7 +82,6 @@ getPostponedData = async ()=> {
 
 					FPLTeamsFull[ ppFxtrs[bl].team_h_id ].ppgames.push( ppFxtrs[bl].ppid ) ;
 					FPLTeamsFull[ ppFxtrs[bl].team_a_id ].ppgames.push( ppFxtrs[bl].ppid ) ;
-
 				}
 
 				for(let rp = 0; rp < rpFxtrs.length ; rp++ ){
@@ -103,12 +93,6 @@ getPostponedData = async ()=> {
 				myPPResolve( [ 	
 					gamesOverview.postponedGames, 
 					gamesOverview.replannedGames 
-					/* , 
-						iBreaks, 
-						evTpEFL, 
-						evTpFAC,
-						evTpECL 
-					*/
 				]) ; 
 
 			}else{
@@ -187,7 +171,7 @@ getCupData = async (cupId)=> {
 				let cupResponse = JSON.parse( cupXhttp.responseText ) ; 
 				// console.log("cupResponse", cupResponse ) ;
 				cupDataAll[cupEvType] = cupResponse ;
-				// console.log("cupDataAll", cupDataAll[cupEvType] ) ;
+				console.log("cupDataAll --cupEvType: ", cupEvType, "--cupDataAll: " ,cupDataAll[cupEvType] ) ;
 				myCupResolve( cupResponse ) ; 
 			}
 		} 
@@ -215,12 +199,6 @@ getCurGW = ( allRounds )=>{
 		}
 	}else{ return curGW ; } 
 }
-
-
-getStaticTeam = ()=>{
-
-}
-
 
 updateCellByTmIdRnd = ( fxtr, loc )=>{
 
@@ -541,19 +519,18 @@ updateCupCell = (tmId, gw, evtClass, cellText )=>{
 		$(cupCelltd).append( cupTie_jq ) ;
 
 	}
-
-	/* 
+	/*
 		else{
-			console.log( 
-				getCI(),
-				"updateCupCell", evtClass,
-				"gw", gw,
-				"tmId", tmId,
-				"text", cellText,
-				"cupCelltd len", cupCelltd.length,
-				"cupCelltd SHOULD BE 1 CELL", $(cupCelltd)
-			) ;
-		}
+		console.log( 
+			getCI(),
+			"updateCupCell", evtClass,
+			"gw", gw,
+			"tmId", tmId,
+			"text", cellText,
+			"cupCelltd len", cupCelltd.length,
+			"cupCelltd SHOULD BE 1 CELL", $(cupCelltd)
+		) ;
+	}	 
 	*/
 }
 
@@ -648,7 +625,6 @@ handleCups = ( cupData )=>{
 				let oppName 	= "unset" ;
 				let tmHisFPL 	= isFPL( parseInt(evFxtr["team_h"] )) ;
 				let tmAisFPL 	= isFPL( parseInt(evFxtr["team_a"] )) ;
-				let replay 		= evFxtr["replay"] || false ;
 
 				if( tmHisFPL ){
 					tmHName = FPLTeamsFull[ evFxtr["team_h"] ]["shortNm"];
@@ -664,7 +640,6 @@ handleCups = ( cupData )=>{
 					tmAName = evFxtr["oppNmA"] ;
 				}
 
-				let rpl = (evFxtr["replay"])? " (replay)":"" ;
 				/* 
 					To debug, change 'evtp-FACorsomething' below, to an existing cup-class [] 
 					let iBreaks = tmpArr[4]['evtp-UIB'] ; 
@@ -675,19 +650,17 @@ handleCups = ( cupData )=>{
 					if( whichCup == "evtp-FACdebuggingabove" ){
 				*/
 
-				if( whichCup == "REMOVE_FOR_DEBUG evtp-EFL" ){
+				if( whichCup == "CHANGE FOR DEBUG evtp-EHL" ){
 					console.log( 
 						getCI(), 
 						"handleCups ", cupData[ck]["title"],
 						" -- fxtr: ", 		evf,
-						"\nreplay: ",		replay, 
-						"\nrpltxt", 		rpl,
 						"\ntm H: ", 		evFxtr["team_h"], 
-						"\ttm H nm: ", 		tmHName + rpl ,
+						"\ttm H nm: ", 		tmHName ,
 						"\tindexOf H: ",	cntndrs.indexOf( evFxtr["team_h"]),
 						"\tBoolean indexOf H: ", Boolean( cntndrs.indexOf( evFxtr["team_h"]) > -1 ),
 						"\ntm A: ", 		evFxtr["team_a"], 
-						"\ttm A nm: ", 		tmAName + rpl ,
+						"\ttm A nm: ", 		tmAName,
 						"\tindexOf A: ",	cntndrs.indexOf( evFxtr["team_a"]),
 						"\tBoolean indexOf A: ", Boolean( cntndrs.indexOf( evFxtr["team_a"]) > -1 ),
 						"\toppName: ", 		oppName
@@ -701,17 +674,17 @@ handleCups = ( cupData )=>{
 
 					/* This fixture has been played */
 
-					updateCupCell( evFxtr["team_h"], cupData[ck]["gw"], whichCup, tmAName + rpl ) ;
-					updateCupCell( evFxtr["team_a"], cupData[ck]["gw"], whichCup, tmHName + rpl ) ;
+					updateCupCell( evFxtr["team_h"], cupData[ck]["gw"], whichCup, tmAName ) ;
+					updateCupCell( evFxtr["team_a"], cupData[ck]["gw"], whichCup, tmHName ) ;
 
 				}else{
 
 					/* This fixture is in the future 
-						console.log("updateCupCell(team_h=", evFxtr["team_h"], ", gw=", cupData[ck]["gw"], ", whichCup=", whichCup, ", tmAName=", tmAName ) ;
-						console.log("updateCupCell(team_a=", evFxtr["team_a"], ", gw=", cupData[ck]["gw"], ", whichCup=", whichCup, ", tmHName=", tmHName ) ;
+					console.log("updateCupCell(team_h=", evFxtr["team_h"], ", gw=", cupData[ck]["gw"], ", whichCup=", whichCup, ", tmAName=", tmAName ) ;
+					console.log("updateCupCell(team_a=", evFxtr["team_a"], ", gw=", cupData[ck]["gw"], ", whichCup=", whichCup, ", tmHName=", tmHName ) ;
 					*/
-					if( tmHisFPL ){ updateCupCell( evFxtr["team_h"], cupData[ck]["gw"], whichCup, tmAName + rpl ) ; }
-					if( tmAisFPL ){ updateCupCell( evFxtr["team_a"], cupData[ck]["gw"], whichCup, tmHName + rpl ) ; }
+					if( tmHisFPL ){ updateCupCell( evFxtr["team_h"], cupData[ck]["gw"], whichCup, tmAName ) ; }
+					if( tmAisFPL ){ updateCupCell( evFxtr["team_a"], cupData[ck]["gw"], whichCup, tmHName ) ; }
 				}		
 			}
 
@@ -883,12 +856,12 @@ const allPromise = 	Promise.all(
 							getStaticData(), 
 							getPostponedData(), 
 							getFixtureData(),
-							getCupData("FAC"), 
-							getCupData("EFL"), 
-							getCupData("EHL"),
-							getCupData("EUL"),
-							getCupData("EOL"),
-							getCupData("UIB")
+							//getCupData("FAC"), 
+							//getCupData("EFL"), 
+							getCupData("EHL")
+							//, getCupData("EUL"),
+							//getCupData("EOL"),
+							//getCupData("UIB")
 						] 
 					) ; 
 
@@ -911,12 +884,12 @@ allPromise.then(
 			"fxtrs:", fxtrs.length 
 		) ; 
 
-		let cup_FAC 	= values[3] ; 
-		let cup_EFL 	= values[4] ; 
-		let cup_EHL 	= values[5] ;
-		let cup_EUL 	= values[6] ;
-		let cup_EOL 	= values[7] ;
-		let cup_UIB 	= values[8] ;
+		//let cup_FAC 	= values[3] ; 
+		//let cup_EFL 	= values[4] ; 
+		let cup_EHL 	= values[3] ;
+		//let cup_EUL 	= values[6] ;
+		//let cup_EOL 	= values[7] ;
+		//let cup_UIB 	= values[8] ;
 
 		// Step 2 : Add data from ppGames to fxtrs. 		( 	FXTR LOOP 	)	-origGw, -reason, -newGW(23), -postponed(true/false) 
 		// Step 4 : Add data from fxtrs to FPLTeamsFull.	( 	FXTR LOOP 	)	-hisDF
@@ -1089,12 +1062,12 @@ allPromise.then(
 		console.log( 
 			getCI(), 
 			"---CUPS---\N",
-			"cup_FAC", cup_FAC.length, 
-			"cup_EFL", cup_EFL.length, 
-			"cup_EHL", cup_EHL.length, 
-			"cup_EUL", cup_EUL.length, 
-			"cup_EOL", cup_EOL.length, 
-			"cup_UIB", cup_UIB.length
+			// "cup_FAC", cup_FAC.length, 
+			// "cup_EFL", cup_EFL.length, 
+			"cup_EHL", cup_EHL.length 
+			// "cup_EUL", cup_EUL.length, 
+			// "cup_EOL", cup_EOL.length, 
+			//"cup_UIB", cup_UIB.length
 		) ; 
 
 		for ( cupAllDataItem in cupDataAll ){ 

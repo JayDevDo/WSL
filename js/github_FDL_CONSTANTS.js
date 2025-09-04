@@ -15,16 +15,19 @@ let allStatsData = [];
 let currentTeamTable = [] ;
 
 let cupDataAll = {
-	'evtp-FAC': [],
-	'evtp-EFL': [],
-	'evtp-EHL': [],
-	'evtp-EUL': [],
-	'evtp-EOL': [],
-	'evtp-UIB': []	
+	'evtp-EHL': []
 };
 
+/*
+	'evtp-FAC': [],
+	'evtp-UIB': []	
+	'evtp-EFL': [],
+	'evtp-EUL': [],
+	'evtp-EOL': [],
+*/
+
 let linearScale = d3.scaleLinear()
-  .domain( [1000, 1400] )
+  .domain( [150, 380] )
   .range( [ "#FFCCFF", "#CC00CC" ] );
 
 /*
@@ -45,7 +48,7 @@ let gamesOverview = {
 		fixedColumns: 3,
 		finishedRounds: 0,
 		currentRnd: 1,
-		evWndw: { 'direction': 1 , 'start': 1, 'rounds': 8, 'end': 8 },
+		evWndw: { 'direction': 1 , 'start': 1, 'rounds': 6, 'end': 6 },
 		locks: [ false, false, false ],
 		locked: false,
 		dfDisplay: {
@@ -69,34 +72,19 @@ let gamesOverview = {
 		replannedGames: [],
 		iBreaks: [],
 		iBreaksShow: true,
-		teamTableWk: 0,
-		teamTableDt: "2026-01-01 20h00",
-		teamTableArr: [],
-		evTypes: [ "evtp-FAC", "evtp-EFL", "evtp-EHL", "evtp-EUL", "evtp-EOL", "evtp-UIB"  ], 
+		evTypes: [ "evtp-EPL", "evtp-EHL",], 
 		/* 
-			"evtp-EPL",
+			"evtp-FAC", 
+			"evtp-EFL",  			
+			"evtp-EUL", 
+			"evtp-EOL"
 			"evtp-UIB"
 		*/
-		euroElite: [
-			1,  	2,		7, 
-			8, 		12, 	13, 
-			15, 	16,  	18
-		],
-		/* [1, 7, 12, 13, 15, 18] = champios lg.  [16]= conference lg.  [2,8]=europa lg */
 		selectedTeamId: 7,
 		teamFilter: [ true, true , true , true , true , true , true , true , true , true , true , true , true ],
-		midWeeksUsed: [
-			[], /* gw 0 no used. followed by 38 real gameweeks */
-			[],[],[],[],[],			[],[],[],[],[],
-			[],[],[],[],[],			[],[],[],[],[],
-			[],[],[],[],[],			[],[],[],[],[],
-			[],[],[],[],[],			[],[],[],
-			 /* after 38 real gameweeks, gw 39 for postponed */
-			[],
-		],
 		sort: 1 ,
 		fontSize: 10,
-		manId: 986725
+		manId: 0
 }
 /* 
 24/25: 856045
@@ -494,8 +482,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "ARS",
 		id: 1,
-		fplDF: [ 4, 4 ] , 	/* [HOME,AWAY] */
-		usrDF: [ 5, 5 ] ,
+		fplDF: [ 5, 4 ] , 	/* [HOME,AWAY] */
+		usrDF: [ 5, 4 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Arsenal",
@@ -509,8 +497,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "AVL",
 		id: 2,
-		fplDF: [ 4, 3 ] ,
-		usrDF: [ 3, 2 ] ,
+		fplDF: [ 2, 2 ] ,
+		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Aston Villa",
@@ -524,7 +512,7 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "BHA",
 		id: 3,
-		fplDF: [ 3, 3 ] ,
+		fplDF: [ 2, 2 ] ,
 		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
@@ -539,8 +527,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "CHE",
 		id: 4,
-		fplDF: [ 4, 3 ] ,
-		usrDF: [ 4, 4 ] ,
+		fplDF: [ 5, 5 ] ,
+		usrDF: [ 5, 4 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Chelsea",
@@ -554,7 +542,7 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "EVE",
 		id: 5,
-		fplDF: [ 3, 2 ] ,
+		fplDF: [ 2, 2 ] ,
 		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
@@ -569,7 +557,7 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "LEI",
 		id: 6,
-		fplDF: [ 3, 3 ] ,
+		fplDF: [ 2, 2 ] ,
 		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
@@ -584,8 +572,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "LIV",
 		id: 7,
-		fplDF: [ 5, 4 ] ,
-		usrDF: [ 5, 5 ] ,
+		fplDF: [ 2, 2 ] ,
+		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Liverpool",
@@ -600,7 +588,7 @@ let FPLTeamsFull = [
 	{   shortNm: "LCL",
 		id: 8,
 		fplDF: [ 2, 2 ] ,
-		usrDF: [ 1, 1 ] ,
+		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "London City Lionesses",
@@ -615,7 +603,7 @@ let FPLTeamsFull = [
 	{   shortNm: "MNC",
 		id: 9,
 		fplDF: [ 4, 4 ] ,
-		usrDF: [ 5, 5 ] ,
+		usrDF: [ 4, 3 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Man city",
@@ -629,8 +617,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "MNU",
 		id: 10,
-		fplDF: [ 3, 3 ] ,
-		usrDF: [ 3, 3 ] ,
+		fplDF: [ 2, 2 ] ,
+		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Man utd",
@@ -644,8 +632,8 @@ let FPLTeamsFull = [
 	},
 	{   shortNm: "TOT",
 		id: 11,
-		fplDF: [ 3, 3 ] ,
-		usrDF: [ 3, 3 ] ,
+		fplDF: [ 2, 2 ] ,
+		usrDF: [ 2, 2 ] ,
 		ownDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		oppDFhis: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ] ,
 		longNm: "Tottenham",
