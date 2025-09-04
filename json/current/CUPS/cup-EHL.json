@@ -1,11 +1,11 @@
 [
-	{ 	"title": "IN", 		"data": [ 1, 4, 9  ] },
-	{	"title": "OUT", 	"data": [ 2, 3, 5, 6, 7, 8, 10, 11, 12 ] },
+	{ 	"title": "IN", 		"data": [ 1, 4, 9, 10 ] },
+	{	"title": "OUT", 	"data": [ 2, 3, 5, 6, 7, 8, 11, 12 ] },
 	{ 	"title": "evntTp", 	"data": "evtp-EHL" },
-	{ 	"title": "GAMEWEEKS", "data": [ 4,   6,  8, 10, 12,	15, 22, 23, 26, 27,	29, 30, 31, 32, 34,	35, 38	] },
+	{ 	"title": "GAMEWEEKS", "data": [ 1, 2, 23] },
 	{
 		"title": "FINAL",
-		"gw": 38,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -14,7 +14,7 @@
 	},
 	{
 		"title": "SF2",
-		"gw": 35,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -24,7 +24,7 @@
 	},
 	{
 		"title": "SF1",
-		"gw": 34,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -34,7 +34,7 @@
 	},
 	{
 		"title": "QF2",
-		"gw": 32,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -46,7 +46,7 @@
 	},
 	{
 		"title": "QF1",
-		"gw": 31,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -58,7 +58,7 @@
 	},
 	{
 		"title": "L16-2",
-		"gw": 30,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -74,7 +74,7 @@
 	},
 	{
 		"title": "L16-1",
-		"gw": 29,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -90,7 +90,7 @@
 	},
 	{
 		"title": "PlayOffs 2",
-		"gw": 27,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -106,7 +106,7 @@
 	},
 	{
 		"title": "PlayOffs 1",
-		"gw": 26,
+		"gw": 23,
 		"elim": [],
 		"drawn": false,
 		"data":	[
@@ -124,66 +124,67 @@
 		"title": "Match day 8",
 		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
 		"title": "Match day 7",
-		"gw": 22,
+		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
 		"title": "Match day 6",
-		"gw": 15,
+		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
 		"title": "Match day 5",
-		"gw": 12,
+		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
 		"title": "Match day 4",
-		"gw": 10,
+		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
 		"title": "Match day 3",
-		"gw": 8,
+		"gw": 23,
 		"elim": [],
-		"drawn": true,
+		"drawn": false,
 		"data":	[
 		]
 	},
 	{
-		"title": "Match day 2",
-		"gw": 6,
+		"title": "3rd Rnd Qual-2",
+		"gw": 2,
 		"elim": [],
 		"drawn": true,
 		"data":	[	
+			{"team_h":10, "team_a":0, "oppNmA":"SK Brann" }
 		]
 	},
 	{
-		"title": "Match day 1",
-		"gw": 4,
-		"elim": [  ],
+		"title": "3rd Rnd Qual-1",
+		"gw": 1,
+		"elim": [],
 		"drawn": true,
 		"data":	[
+			{"team_h": 0, "team_a":10, "oppNmH":"SK Brann" }
 		]
 	}
-
 ]
 
