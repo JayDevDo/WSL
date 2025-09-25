@@ -175,6 +175,12 @@
 								<input type="checkbox" id="evtp-EHL" name="evtp-EHL" enabled="true" unchecked />
 								<label for="evtp-EHL" class="evtp-EHL">EHL - Uefa cHampions Lg </label>
 							</div>
+
+							<div>
+								<input type="checkbox" id="evtp-EFL" name="evtp-EHL" enabled="true" unchecked />
+								<label for="evtp-EHL" class="evtp-EFL">EFL - League Cup</label>
+							</div>
+
 						</fieldset>
 					</fieldset>
 
@@ -204,18 +210,18 @@
 								<button class="evwndwTgl" enabled=false onclick="toggleLocks(0)" >LOCK</button>
 							</td>
 							<td>
-								<form id="eventWndwStartForm" value=1 >
+								<form id="eventWndwStartForm" value=4 >
 									<select name="strtRnd"
 											id="strtRnd"
-											value=1
+											value=4
 											onchange="setEventWndwStart(value)"
 									>
-										<option value=1 active selected >1</option>
+										<option value=1  >1</option>
 										<option value=2  >2</option>
 										<option value=3  >3</option>
 										<option value=4  >4</option>
 										<option value=5  >5</option>
-										<option value=6  >6</option>
+										<option value=6 active selected >6</option>
 										<option value=7  >7 IB</option>
 										<option value=8  >8</option>
 										<option value=9  >9</option>
@@ -280,10 +286,10 @@
 							<th>Last Round</th>
 							<td><button class="evwndwTgl" enabled=false onclick="toggleLocks(2)" >LOCK</button></td>
 							<td>
-								<form id="eventWndwEndForm" value=6 >
+								<form id="eventWndwEndForm" value=9 >
 									<select name="endRnd"
 											id="endRnd"
-											value=6
+											value=9
 											onchange="setEventWndwEnd(value)"
 									>
 										<option value=1 >1</option>
@@ -291,10 +297,10 @@
 										<option value=3 >3</option>
 										<option value=4 >4</option>
 										<option value=5 >5</option>
-										<option value=6  active selected >6 IB</option>
+										<option value=6 >6 IB</option>
 										<option value=7 >7</option>
 										<option value=8 >8</option>
-										<option value=9 >9 IB</option>
+										<option value=9 active selected >9 IB</option>
 										<option value=10 >10</option>
 										<option value=11 >11</option>
 										<option value=12 >12</option>
@@ -607,15 +613,21 @@
 
 							<!-- Gameweek 03  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></th>
+							<th class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></th>
 
 							<!-- Gameweek 04  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></th>
 
 							<!-- Gameweek 05  -->
-							<th class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></th>							
+							<th class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></th>
+							<th class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></th>
+
 							<!-- Gameweek 06  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></th>
-							<th class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></th>
+							<th class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></th>
+							<th class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></th>
 
 							<!-- Gameweek 07  -->
 							<th class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></th>
@@ -623,17 +635,23 @@
 
 							<!-- Gameweek 08  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></th>
+							<th class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></th>
 
 							<!-- Gameweek 09  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></th>
-							<th class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></th>
+							<th class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></th>
+							<th class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></th>
 
 							<!-- Gameweek 10  -->
 							<th class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></th>
 							<th class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></th>
 
 							<!-- Gameweek 11  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></th>
+							<th class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></th>
 
 							<!-- Gameweek 12  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></th>
@@ -668,6 +686,7 @@
 
 							<!-- Gameweek 21  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></th>
+							<th class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></th>
 
 							<!-- Gameweek 22  -->
 							<th class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></th>
@@ -692,7 +711,6 @@
 
 							<th class="dfc">100</th>
 
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -703,15 +721,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -719,17 +743,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -764,6 +794,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -785,7 +816,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -796,15 +826,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -812,17 +848,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -857,6 +899,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -866,6 +909,7 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
+
 						</tr>
 
 						<tr id="BHA" tmId="3" class="tmSelected" class="rowShow" >
@@ -877,7 +921,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -888,15 +931,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -904,17 +953,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -949,6 +1004,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -971,7 +1027,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -982,15 +1037,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -998,17 +1059,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1043,6 +1110,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1052,7 +1120,6 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
-
 						</tr>
 
 						<tr id="EVE" tmId="5" class="tmSelected" class="rowShow" >
@@ -1076,15 +1143,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1092,17 +1165,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1137,6 +1216,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1146,7 +1226,6 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
-
 						</tr>
 
 						<tr id="LEI" tmId="6" class="tmSelected" class="rowShow" >
@@ -1160,7 +1239,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1171,15 +1249,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1187,17 +1271,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1232,6 +1322,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1255,7 +1346,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1266,15 +1356,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1282,17 +1378,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1327,6 +1429,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1349,7 +1452,6 @@
 								<div class="tm-idc greenLight" > </div>
 							</th>
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1360,15 +1462,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1376,17 +1484,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1421,6 +1535,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1430,7 +1545,6 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
-
 						</tr>
 
 						<tr id="MNC" tmId="9" class="tmSelected" class="rowShow" >
@@ -1441,7 +1555,6 @@
 								<div class="tm-idc greenLight" > </div>
 							</th>
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1452,15 +1565,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1468,17 +1587,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1513,6 +1638,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1536,7 +1662,6 @@
 							</th>
 
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1547,15 +1672,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1563,17 +1694,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1608,6 +1745,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1630,7 +1768,6 @@
 								<div class="tm-idc greenLight" > </div>
 							</th>
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1641,15 +1778,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1657,17 +1800,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1702,6 +1851,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1711,7 +1861,6 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
-
 						</tr>
 
 						<tr id="WHU" tmId="12" class="tmSelected" class="rowShow"  >
@@ -1724,7 +1873,6 @@
 								<div class="tm-idc greenLight" > </div>
 							</th>
 							<th class="dfc">100</th>
-
 							<!-- Gameweek 01  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="1" date="2025-09-06" round="GW 01"></td>
 							<td class="evtTeamBlock evtp-EHL" evrnd="1" date="2025-09-11" round="3rd round Quali-1"></td>
@@ -1735,15 +1883,21 @@
 
 							<!-- Gameweek 03  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="3" date="2025-09-21" round="GW 03"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="3" date="2025-09-24" round="EFL 1"></td>
 
 							<!-- Gameweek 04  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="4" date="2025-09-27" round="GW 04"></td>
 
 							<!-- Gameweek 05  -->
-							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>							
+							<td class="evtTeamBlock evtp-EPL" evrnd="5" date="2025-10-03" round="GW 05"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="5" date="2025-10-07" round="Match day 1"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="5" date="2025-10-08" round="EFL 2"></td>
+
 							<!-- Gameweek 06  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="6" date="2025-10-11" round="GW 06"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-13" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="6" date="2025-10-14" round="Match day 2"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="6" date="2025-10-17" round="EFL 3"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="6" date="2025-10-20" round="IB"></td>
 
 							<!-- Gameweek 07  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="7" date="2025-11-01" round="IB"></td>
@@ -1751,17 +1905,23 @@
 
 							<!-- Gameweek 08  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="8" date="2025-11-08" round="GW 08"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="8" date="2025-11-12" round="Match day 3"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="8" date="2025-11-12" round="EFL 4"></td>
 
 							<!-- Gameweek 09  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="9" date="2025-11-16" round="GW 09"></td>
-							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-20" round="IB"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="9" date="2025-11-19" round="Match day 4"></td>
+							<td class="evtTeamBlock evtp-EFL" evrnd="9" date="2025-11-22" round="EFL 5"></td>
+							<td class="evtTeamBlock evtp-UIB" evrnd="9" date="2025-11-24" round="IB"></td>
 
 							<!-- Gameweek 10  -->
 							<td class="evtTeamBlock evtp-UIB" evrnd="10" date="2025-11-30" round="IB"></td>
 							<td class="evtTeamBlock evtp-EPL" evrnd="10" date="2025-12-06" round="GW 10"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="10" date="2025-12-09" round="Match day 5"></td>
 
 							<!-- Gameweek 11  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="11" date="2025-12-13" round="GW 11"></td>
+							<td class="evtTeamBlock evtp-EHL" evrnd="11" date="2025-12-17" round="Match day 6"></td>
 
 							<!-- Gameweek 12  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="12" date="2026-01-11" round="GW 12"></td>
@@ -1796,6 +1956,7 @@
 
 							<!-- Gameweek 21  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="21" date="2026-05-03" round="GW 21"></td>
+							<td class="evtTeamBlock evtp-FAC" evrnd="21" date="2026-05-09" round="FA Cup Final?"></td>
 
 							<!-- Gameweek 22  -->
 							<td class="evtTeamBlock evtp-EPL" evrnd="22" date="2026-05-15" round="GW 22"></td>
@@ -1805,6 +1966,7 @@
 								<div class="fxtrPPcount"></div>
 								<div class="fxtrPPlist"></div>
 							</td>
+
 						</tr>
 
 					</tbody>
