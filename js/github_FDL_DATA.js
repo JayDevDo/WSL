@@ -39,17 +39,6 @@ getStaticData = async ()=> {
 
 
 getPostponedData = async ()=> {
-	/*
-		gamesOverview.evTypes: [	
-			"evtp-EPL", Premier league
-			"evtp-FAC",	FA Cup
-			"evtp-EFL",	EFL (Carabao) Cup
-			"evtp-EOL",	Uefa Conference League
-			"evtp-EUL",	Uefa Europa League
-			"evtp-EHL",	Uefa Champions League
-			"evtp-UIB"	Uefa International breaks
-		]
-	*/
 
 	let postpndPrms = new Promise( ( myPPResolve )=> {
 
@@ -474,7 +463,7 @@ updateCupCell = (tmId, gw, evtClass, cellText )=>{
 	let cupCellCrit = "#eventTable tr[tmId=" + tmId + "] td[evrnd='" + gw + "']." + evtClass ;
 	let cupCelltd = $( cupCellCrit ).get() ;
 
-	if( evtClass == "evtp-EHL" ){
+	if( evtClass == "evtp-EFL" ){
 		console.log( 
 			getCI(),
 			"updateCupCell", evtClass,
@@ -582,7 +571,7 @@ handleCups = ( cupData )=>{
 	}
 
 	// Looping backwards, excluding first 3 entries teams IN, OUT and eventTp
-	for( let ck = (cdl-1);  ck > 2 ; ck--){
+	for( let ck = (cdl-1);  ck > 3 ; ck--){
 		
 		let pastGW = ( cupData[ck]["gw"] < curGW ) ;
 		let cupDrawn = cupData[ck]["drawn"] ;
