@@ -820,14 +820,14 @@ togglePPdisplay = (viz, f )=>{
 
 	if( viz == 'toggle' ){
 		gamesOverview.showPP = !gamesOverview.showPP ;
-		// console.log( getCI(), f, "togglePPdisplay", gamesOverview.showPP, viz ) ;
+		console.log( getCI(), f, "togglePPdisplay", gamesOverview.showPP, viz ) ;
 
 	}else{
 		gamesOverview.showPP = Boolean( viz ) ;
-		// console.log( getCI(), f, "togglePPdisplay", gamesOverview.showPP, Boolean( viz )  ) ;
+		console.log( getCI(), f, "togglePPdisplay", gamesOverview.showPP, Boolean( viz )  ) ;
 	}
 	
-	//console.log( getCI(), f, "togglePPdisplay: viz=", viz, " Boolean(viz)=" , Boolean(viz), "gamesOverview.showPP=", gamesOverview.showPP )
+	console.log( getCI(), f, "togglePPdisplay: viz=", viz, " Boolean(viz)=" , Boolean(viz), "gamesOverview.showPP=", gamesOverview.showPP )
 	
 	if(  gamesOverview.showPP  ){
 
@@ -838,7 +838,7 @@ togglePPdisplay = (viz, f )=>{
 
 		$("#hdr-tggl-ppnd").css("backgroundColor", "#53AC00" ) ;
 		$("#togglePostponed").text( "Hide" ) ;
-		showEventClmn(39) ;
+		showEventClmn(23) ;
 		setIndicator("ppsLdd-idc", "green" ) ;
 	}else{
 
@@ -849,7 +849,7 @@ togglePPdisplay = (viz, f )=>{
 
 		$("#hdr-tggl-ppnd").css("backgroundColor", "#D91A00" ) ;
 		$("#togglePostponed").text( "Show" ) ;
-		hideEventClmn(39) ;
+		hideEventClmn(23) ;
 		setIndicator("ppsLdd-idc", "red" ) ;
 	}
 

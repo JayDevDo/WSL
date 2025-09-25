@@ -474,7 +474,7 @@ updateCupCell = (tmId, gw, evtClass, cellText )=>{
 	let cupCellCrit = "#eventTable tr[tmId=" + tmId + "] td[evrnd='" + gw + "']." + evtClass ;
 	let cupCelltd = $( cupCellCrit ).get() ;
 
-	if( evtClass == "nocheck" ){
+	if( evtClass == "evtp-EHL" ){
 		console.log( 
 			getCI(),
 			"updateCupCell", evtClass,
@@ -650,7 +650,7 @@ handleCups = ( cupData )=>{
 					if( whichCup == "evtp-FACdebuggingabove" ){
 				*/
 
-				if( whichCup == "CHANGE FOR DEBUG evtp-EHL" ){
+				if( whichCup == "evtp-EHL" ){
 					console.log( 
 						getCI(), 
 						"handleCups ", cupData[ck]["title"],
@@ -857,7 +857,7 @@ const allPromise = 	Promise.all(
 							getPostponedData(), 
 							getFixtureData(),
 							//getCupData("FAC"), 
-							//getCupData("EFL"), 
+							getCupData("EFL"), 
 							getCupData("EHL")
 							//, getCupData("EUL"),
 							//getCupData("EOL"),
@@ -885,8 +885,8 @@ allPromise.then(
 		) ; 
 
 		//let cup_FAC 	= values[3] ; 
-		//let cup_EFL 	= values[4] ; 
 		let cup_EHL 	= values[3] ;
+		let cup_EFL 	= values[4] ; 
 		//let cup_EUL 	= values[6] ;
 		//let cup_EOL 	= values[7] ;
 		//let cup_UIB 	= values[8] ;

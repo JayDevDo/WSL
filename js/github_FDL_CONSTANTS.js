@@ -46,9 +46,9 @@ getCI = ()=>{ callIndexer++; return callIndexer.toString() ; }
 
 let gamesOverview = {
 		fixedColumns: 3,
-		finishedRounds: 0,
-		currentRnd: 1,
-		evWndw: { 'direction': 1 , 'start': 1, 'rounds': 6, 'end': 6 },
+		finishedRounds: 3,
+		currentRnd: 4,
+		evWndw: { 'direction': 1 , 'start': 4, 'rounds': 6, 'end': 9 },
 		locks: [ false, false, false ],
 		locked: false,
 		dfDisplay: {
@@ -63,8 +63,8 @@ let gamesOverview = {
 		},
 		showSttng: true,
 		showDdln: true,
-		hasPP: false,
-		showPP: false,
+		hasPP: true,
+		showPP: true,
 		showRP: false,
 		postponedGameIds: [],
 		postponedGames: [],
@@ -72,10 +72,9 @@ let gamesOverview = {
 		replannedGames: [],
 		iBreaks: [],
 		iBreaksShow: true,
-		evTypes: [ "evtp-EPL", "evtp-EHL",], 
+		evTypes: [ "evtp-EPL", "evtp-EHL", "evtp-EFL"], 
 		/* 
-			"evtp-FAC", 
-			"evtp-EFL",  			
+			"evtp-FAC",  
 			"evtp-EUL", 
 			"evtp-EOL"
 			"evtp-UIB"
