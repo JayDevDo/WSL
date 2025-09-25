@@ -1,79 +1,71 @@
 [		
-	{ 	"title": "IN", 		"data": [] },
-	{	"title": "OUT", 	"data": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] },
+	{ 	"title": "IN", 		"data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] },
+	{	"title": "OUT", 	"data": [] },
 	{ 	"title": "evntTp", 	"data": "evtp-EFL" },
-	{ 	"title": "GAMEWEEKS", "data": [ 2, 4, 5, 9, 16, 21] },
+	{ 	"title": "GAMEWEEKS", "data": [ 3, 5, 6, 8, 9 ] },
 	{
-		"title": "FINAL",
-		"gw": 22,
-		"elim": [ ],
-		"drawn": false,
-		"data":	[
-					{"team_h":0, "team_a":0, "oppNmA":"TBD" }
-	 			]
-	},
-	{
-		"title": "SF-2",
-		"gw": 20,
-		"elim": [  ],
-		"drawn": false,
-		"data":	[
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" },
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" }
-		]
-	},
-	{
-		"title": "SF-1",
-		"gw": 19,
-		"elim": [ ],
-		"drawn": false,
-		"data":	[
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" },
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" }
-		]
-	},
-	{
-		"title": "QF",
-		"gw": 16,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" },
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" },
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" },
-					{"team_h": 0, "team_a":0, "oppNmA":"TBD" }
-		]
-	},
-	{
-		"title": "L16",
+		"title": "EFL 5",
 		"gw": 9,
 		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data":	[
+			{"team_h":2, 	"team_a":0, 	"oppNmA":"(E) Birmingham City" },
+			{"team_h":0, 	"team_a":5, 	"oppNmH":"(A) Newcastle" },
+			{"team_h":6, 	"team_a":0, 	"oppNmA":"(D) Crystal Palace" },
+			{"team_h":0, 	"team_a":7, 	"oppNmH":"(B) Sheffield utd" },
+			{"team_h":0, 	"team_a":8, 	"oppNmH":"(D) Ipswitch" },
+			{"team_h":0, 	"team_a":9, 	"oppNmH":"(A) Nottingham Forest" },
+			{"team_h":0, 	"team_a":11, 	"oppNmH":"(E) Bristol City" },
+			{"team_h":0, 	"team_a":12, 	"oppNmH":"(C) Portsmouth" }
 		]
 	},
 	{
-		"title": "L32-2",
+		"title": "EFL 4",
+		"gw": 8,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":3, 	"team_a":0, 	"oppNmA":"(C) Charlton Athletic" },
+			{"team_h":12, 	"team_a":0, 	"oppNmA":"(C) Southampton" }
+		]
+	},
+	{
+		"title": "EFL 3",
+		"gw": 6,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":0, 	"team_a":2, 	"oppNmH":"(E) Bristol City" },
+			{"team_h":3, 	"team_a":0, 	"oppNmA":"(C) Southampton" },
+			{"team_h":5, 	"team_a":0, 	"oppNmA":"(A) Nottingham Forest" },
+			{"team_h":0, 	"team_a":7, 	"oppNmH":"(B) Durham" },
+			{"team_h":8, 	"team_a":6 },
+			{"team_h":0, 	"team_a":9, 	"oppNmH":"(A) Newcastle" },
+			{"team_h":11, 	"team_a":0, 	"oppNmA":"(E) Birmingham City" }
+		]
+	},
+	{
+		"title": "EFL 2",
 		"gw": 5,
 		"elim": [],
-		"drawn": false,
-		"data":	[
-		]
-	},
-	{
-		"title": "L32-1",
-		"gw": 4,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-		]
-	},
-	{
-		"title": "L64",
-		"gw": 2,
-		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data": [
+			{"team_h":12, 	"team_a":3 }
+		]
+	},
+	{
+		"title": "EFL 1",
+		"gw": 3,
+		"elim": [],
+		"drawn": true,
+		"data": [
+			{"team_h":0, 	"team_a":3, 	"oppNmH":"(C) Portsmouth" },
+			{"team_h":0, 	"team_a":6, 	"oppNmH":"(D) Ipswitch" },
+			{"team_h":7, 	"team_a":0, 	"oppNmA":"(B) Sunderland" },
+			{"team_h":0, 	"team_a":8, 	"oppNmH":"(D) Crystal Palace" },
+			{"team_h":9, 	"team_a":5 },
+			{"team_h":11, 	"team_a":2 },
+			{"team_h":0, 	"team_a":12, 	"oppNmH":"(C) Charlton Athletic" }
 		]
 	}
 ]

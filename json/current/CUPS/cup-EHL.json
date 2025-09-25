@@ -1,171 +1,72 @@
 [
-	{ 	"title": "IN", 		"data": [ 1, 4, 9, 10 ] },
-	{	"title": "OUT", 	"data": [ 2, 3, 5, 6, 7, 8, 11, 12 ] },
+	{ 	"title": "IN", 		"data": [ 1, 4, 10 ] },
+	{	"title": "OUT", 	"data": [ 2, 3, 5, 6, 7, 8, 9, 11, 12 ] },
 	{ 	"title": "evntTp", 	"data": "evtp-EHL" },
-	{ 	"title": "GAMEWEEKS", "data": [ 1, 2, 23] },
-	{
-		"title": "FINAL",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h":0, "team_a":0, "oppNmH":"" }
-	 	]
-	},
-	{
-		"title": "SF2",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" }
-		]
-	},
-	{
-		"title": "SF1",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" }
-		]
-	},
-	{
-		"title": "QF2",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" }
-		]
-	},
-	{
-		"title": "QF1",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" },
-			{"team_h": 0, "team_a":0, "oppNmH":"" }
-		]
-	},
-	{
-		"title": "L16-2",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" }
-		]
-	},
-	{
-		"title": "L16-1",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" }
-		]
-	},
-	{
-		"title": "PlayOffs 2",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" }
-		]
-	},
-	{
-		"title": "PlayOffs 1",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmH":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" },
-			{"team_h": 0,  "team_a":0, 	"oppNmA":"" }
-		]
-	},
-	{
-		"title": "Match day 8",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-		]
-	},
-	{
-		"title": "Match day 7",
-		"gw": 23,
-		"elim": [],
-		"drawn": false,
-		"data":	[
-		]
-	},
+	{ 	"title": "GAMEWEEKS", "data": [ 1, 2, 5, 6, 8, 9, 10, 11 ] },
 	{
 		"title": "Match day 6",
-		"gw": 23,
+		"gw": 11,
 		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data":	[
+			{"team_h":0, 	"team_a":1, 	"oppNmH": "Oud Heverlee Leuven" },
+			{"team_h":0, 	"team_a":4, 	"oppNmH": "Wolfsburg" 			},
+			{"team_h":0, 	"team_a":10, 	"oppNmH": "Juventus" 			}
 		]
 	},
 	{
 		"title": "Match day 5",
-		"gw": 23,
+		"gw": 10,
 		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "FC Twente" 	},
+			{"team_h":4, 	"team_a":0, 	"oppNmA": "Roma" 		},
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "Lyon" 		}
 		]
 	},
 	{
 		"title": "Match day 4",
-		"gw": 23,
+		"gw": 9,
 		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "Real Madrid" },
+			{"team_h":4, 	"team_a":0, 	"oppNmA": "Barcelona" 	},
+			{"team_h":0, 	"team_a":10, 	"oppNmH": "Wolfsburg" 	}
 		]
 	},
 	{
 		"title": "Match day 3",
-		"gw": 23,
+		"gw": 8,
 		"elim": [],
-		"drawn": false,
+		"drawn": true,
 		"data":	[
+			{"team_h":0, 	"team_a":1, "oppNmH":"Bayern Munich" },
+			{"team_h":0, 	"team_a":4, "oppNmH":"SKN St. Poelten" },
+			{"team_h":10, 	"team_a":0, "oppNmA":"PSG" }
+		]
+	},
+	{
+		"title": "Match day 2",
+		"gw": 6,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":0, 	"team_a":1, 	"oppNmH":"Arsenal" 		},
+			{"team_h":4, 	"team_a":0, 	"oppNmA":"Paris FC" 	},
+			{"team_h":0, 	"team_a":10, 	"oppNmH":"Atletico Madrid" }
+		]
+	},
+	{
+		"title": "Match day 1",
+		"gw": 5,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, "oppNmA":"Lyon" },
+			{"team_h":0, 	"team_a":4, "oppNmH":"FC Twente" },
+			{"team_h":10, 	"team_a":0, "oppNmA":"Vaalerenga" }
 		]
 	},
 	{
