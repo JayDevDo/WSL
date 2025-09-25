@@ -2,7 +2,7 @@
 	css for index.html
 */
 
-/* 	Body 							*/
+/* 	 							*/
 *{ text-rendering: optimizeLegibility; }
 body{background-color: #121212;color: #FFFFF2; }
 
@@ -226,10 +226,15 @@ getting an error on:
 }
 
 
-/*  Fixtures container row headers (columns 1,2,3)	*/
+/*  Fixtures container row headers (columns 1,2,3)	
+was: #F2F2F2
+new: #303030
+bg2: #CC6633
 
-.striped{ 	background-color: #f2f2f2; 	color: #000000; }
-.unstriped{ background-color: #808080; }
+*/
+
+.striped{ 	background-color: #282828; 	color: #FFFFFF; }
+.unstriped{ background-color: #FF9933; }
 
 .striped th:nth-of-type(1){background-color: #185ee6;color: #000000; }
 .striped th:nth-of-type(2){background-color: #185ee6;color: #000000; }
