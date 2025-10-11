@@ -1,27 +1,26 @@
 [
 	{
-		"unplanned": [
+		"unplanned": []
+	},
+	{
+		"re-planned": [
 			{
 				"ppid": 13,
-				"nwRound": 23,
+				"nwRound": 10,
 				"ogGW": 3,
-				"added": false,
+				"added": true,
 				"team_h_nm": "AVL",
 				"team_h_id": 2,
 				"team_a_id": 7,
 				"team_a_nm": "LIV",
-				"status": "postponed",
+				"status": "replanned",
 				"reason": "og: 3: RIP Beardy",
 				"link": "https://www.bbc.com/sport/football/live/cjr5nr5xg1yt"
 			}
-
 		]
 	},
 	{
-		"re-planned": []
-	},
-	{
-		"ppRpIds":[]
+		"ppRpIds":[13]
 	},
 	{
 		"ppIds": []
