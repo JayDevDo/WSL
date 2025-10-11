@@ -53,7 +53,7 @@
 		"elim": [],
 		"drawn": true,
 		"data":	[
-			{"team_h":0, 	"team_a":1, 	"oppNmH":"Arsenal" 		},
+			{"team_h":0, 	"team_a":1, 	"oppNmH":"Benfica" 		},
 			{"team_h":4, 	"team_a":0, 	"oppNmA":"Paris FC" 	},
 			{"team_h":0, 	"team_a":10, 	"oppNmH":"Atletico Madrid" }
 		]
