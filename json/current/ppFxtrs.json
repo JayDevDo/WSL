@@ -1,6 +1,20 @@
 [
 	{
-		"unplanned": []
+		"unplanned": [
+			{
+				"ppid": 78,
+				"nwRound": 23,
+				"ogGW": 14,
+				"added": true,
+				"team_h_nm": "ARS",
+				"team_h_id": 1,
+				"team_a_id": 6,
+				"team_a_nm": "LEI",
+				"status": "replanned",
+				"reason": "og: 14: ARS plays Corinthians",
+				"link": ""
+			}
+		]
 	},
 	{
 		"re-planned": [
@@ -23,7 +37,7 @@
 		"ppRpIds":[13]
 	},
 	{
-		"ppIds": []
+		"ppIds": [78]
 	},
 	{	"example pp": {
 			"ppid": 144,
