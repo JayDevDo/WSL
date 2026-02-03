@@ -2,16 +2,82 @@
 	{ 	"title": "IN", 		"data": [ 1, 4, 10 ] },
 	{	"title": "OUT", 	"data": [ 2, 3, 5, 6, 7, 8, 9, 11, 12 ] },
 	{ 	"title": "evntTp", 	"data": "evtp-EHL" },
-	{ 	"title": "GAMEWEEKS", "data": [ 1, 2, 5, 6, 8, 9, 10, 11 ] },
+	{ 	"title": "GAMEWEEKS", "data": [ 1, 2, 5, 6, 8, 9, 10, 11, 15, 16, 18, 19, 20, 21, 22 ] },
 	{
-		"title": "Match day 6",
-		"gw": 11,
+		"title": "FINAL",
+		"gw": 22,
+		"elim": [],
+		"drawn": false,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":4, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "TBD" }
+		]
+	},
+	{
+		"title": "SF2",
+		"gw": 21,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":4, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "TBD" }
+		]
+	},
+	{
+		"title": "SF1",
+		"gw": 20,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":4, 	"team_a":0, 	"oppNmA": "TBD" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "TBD" }
+		]
+	},
+	{
+		"title": "QF2",
+		"gw": 19,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "Chelsea" },
+			{"team_h":0, 	"team_a":4, 	"oppNmH": "Arsenal/Oud Heverlee Leuven" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "Bayern Munich" }
+		]
+	},
+	{
+		"title": "QF1",
+		"gw": 18,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "Chelsea" },
+			{"team_h":0, 	"team_a":4, 	"oppNmH": "Arsenal/Oud Heverlee Leuven" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "Bayern Munich" }
+		]
+	},	
+	{
+		"title": "PlayOffs 2",
+		"gw": 16,
+		"elim": [],
+		"drawn": true,
+		"data":	[
+			{"team_h":1, 	"team_a":0, 	"oppNmA": "Oud Heverlee Leuven" },
+			{"team_h":0, 	"team_a":4, 	"oppNmH": "BYE" },
+			{"team_h":10, 	"team_a":0, 	"oppNmA": "Atletico Madrid"}
+		]
+	},
+	{
+		"title": "PlayOffs 1",
+		"gw": 15,
 		"elim": [],
 		"drawn": true,
 		"data":	[
 			{"team_h":0, 	"team_a":1, 	"oppNmH": "Oud Heverlee Leuven" },
-			{"team_h":0, 	"team_a":4, 	"oppNmH": "Wolfsburg" 			},
-			{"team_h":0, 	"team_a":10, 	"oppNmH": "Juventus" 			}
+			{"team_h":0, 	"team_a":4, 	"oppNmH": "BYE" },
+			{"team_h":0, 	"team_a":10, 	"oppNmH": "Atletico Madrid" }
 		]
 	},
 	{
