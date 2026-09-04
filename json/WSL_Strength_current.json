@@ -1,0 +1,91 @@
+{
+	"competition": "WSL",
+	"season": "2026-2027",
+	"retrieved_at": "2026-08-02T18:33:00Z",
+	"teams": [
+		{
+			"id": 1,
+			"short_name": "ARS",
+			"home": { "mp": 11, "gf": 28, "ga": 6,  "cs": 6 },
+			"away": { "mp": 11, "gf": 25, "ga": 8,  "cs": 5 }
+		},
+		{
+			"id": 2,
+			"short_name": "AVL",
+			"home": { "mp": 11, "gf": 14, "ga": 26, "cs": 2 },
+			"away": { "mp": 11, "gf": 14, "ga": 22, "cs": 3 }
+		},
+		{
+			"id": 3,
+			"short_name": "BIR",
+			"home": { "mp": 11, "gf": 12, "ga": 18, "cs": 2 },
+			"away": { "mp": 11, "gf": 12, "ga": 18, "cs": 1 }
+		},
+		{
+			"id": 4,
+			"short_name": "BHA",
+			"home": { "mp": 11, "gf": 17, "ga": 15, "cs": 3 },
+			"away": { "mp": 11, "gf": 10, "ga": 13, "cs": 4 }
+		},
+		{
+			"id": 5,
+			"short_name": "CHA",
+			"home": { "mp": 11, "gf": 12, "ga": 18, "cs": 2 },
+			"away": { "mp": 11, "gf": 12, "ga": 18, "cs": 1 }
+		},
+		{
+			"id": 6,
+			"short_name": "CHE",
+			"home": { "mp": 11, "gf": 20, "ga": 8,  "cs": 6 },
+			"away": { "mp": 11, "gf": 24, "ga": 12, "cs": 3 }
+		},
+		{
+			"id": 7,
+			"short_name": "CRY",
+			"home": { "mp": 11, "gf": 12, "ga": 18, "cs": 2 },
+			"away": { "mp": 11, "gf": 12, "ga": 18, "cs": 1 }
+		},
+		{
+			"id": 8,
+			"short_name": "EVE",
+			"home": { "mp": 11, "gf": 11, "ga": 22, "cs": 2 },
+			"away": { "mp": 11, "gf": 14, "ga": 15, "cs": 1 }
+		},
+		{
+			"id": 9,
+			"short_name": "LIV",
+			"home": { "mp": 11, "gf": 13, "ga": 15, "cs": 2 },
+			"away": { "mp": 11, "gf": 8,  "ga": 19, "cs": 1 }
+		},
+		{
+			"id": 10,
+			"short_name": "LCL",
+			"home": { "mp": 11, "gf": 16, "ga": 16, "cs": 2 },
+			"away": { "mp": 11, "gf": 12, "ga": 19, "cs": 0 }
+		},
+		{
+			"id": 11,
+			"short_name": "MNC",
+			"home": { "mp": 11, "gf": 38, "ga": 8,  "cs": 5 },
+			"away": { "mp": 11, "gf": 24, "ga": 11, "cs": 3 }
+		},
+		{
+			"id": 12,
+			"short_name": "MNU",
+			"home": { "mp": 11, "gf": 18, "ga": 13, "cs": 2 },
+			"away": { "mp": 11, "gf": 20, "ga": 9,  "cs": 5 }
+		},
+		{
+			"id": 13,
+			"short_name": "TOT",
+			"home": { "mp": 11, "gf": 11, "ga": 12, "cs": 5 },
+			"away": { "mp": 11, "gf": 24, "ga": 26, "cs": 1 }
+		},
+		{
+			"id": 14,
+			"short_name": "WHU",
+			"home": { "mp": 11, "gf": 13, "ga": 24, "cs": 1 },
+			"away": { "mp": 11, "gf": 7,  "ga": 21, "cs": 2 }
+		}
+	]
+}

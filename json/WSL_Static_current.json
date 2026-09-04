@@ -1,0 +1,408 @@
+{
+	"events": [
+	{
+		"id": 1,
+		"name": "Gameweek 1",
+		"deadline_time": "2026-09-04T16:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": true,
+		"finished": false
+	},
+	{
+		"id": 2,
+		"name": "Gameweek 2",
+		"deadline_time": "2026-09-12T10:15:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 3,
+		"name": "Gameweek 3",
+		"deadline_time": "2026-09-18T16:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 4,
+		"name": "Gameweek 4",
+		"deadline_time": "2026-09-26T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 5,
+		"name": "Gameweek 5",
+		"deadline_time": "2026-10-04T09:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 6,
+		"name": "Gameweek 6",
+		"deadline_time": "2026-10-17T09:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 7,
+		"name": "Gameweek 7",
+		"deadline_time": "2026-10-25T11:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 8,
+		"name": "Gameweek 8",
+		"deadline_time": "2026-10-31T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 9,
+		"name": "Gameweek 9",
+		"deadline_time": "2026-11-07T10:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 10,
+		"name": "Gameweek 10",
+		"deadline_time": "2026-11-14T12:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 11,
+		"name": "Gameweek 11",
+		"deadline_time": "2026-11-22T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 12,
+		"name": "Gameweek 12",
+		"deadline_time": "2026-12-12T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 13,
+		"name": "Gameweek 13",
+		"deadline_time": "2026-12-19T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 14,
+		"name": "Gameweek 14",
+		"deadline_time": "2027-01-10T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 15,
+		"name": "Gameweek 15",
+		"deadline_time": "2027-01-20T17:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 16,
+		"name": "Gameweek 16",
+		"deadline_time": "2027-01-24T11:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 17,
+		"name": "Gameweek 17",
+		"deadline_time": "2027-01-30T16:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 18,
+		"name": "Gameweek 18",
+		"deadline_time": "2027-02-07T12:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 19,
+		"name": "Gameweek 19",
+		"deadline_time": "2027-02-14T12:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 20,
+		"name": "Gameweek 20",
+		"deadline_time": "2027-03-13T11:00:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 21,
+		"name": "Gameweek 21",
+		"deadline_time": "2027-03-17T17:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 22,
+		"name": "Gameweek 22",
+		"deadline_time": "2027-03-27T12:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 23,
+		"name": "Gameweek 23",
+		"deadline_time": "2027-04-04T11:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 24,
+		"name": "Gameweek 24",
+		"deadline_time": "2027-04-30T16:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 25,
+		"name": "Gameweek 25",
+		"deadline_time": "2027-05-09T10:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	},
+	{
+		"id": 26,
+		"name": "Gameweek 26",
+		"deadline_time": "2027-05-22T11:30:00Z",
+		"is_previous": false,
+		"is_current": false,
+		"is_next": false,
+		"finished": false
+	}
+],
+	"teams": [
+	{
+		"id": 1,
+		"name": "Arsenal",
+		"short_name": "ARS",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 2,
+		"name": "Aston Villa",
+		"short_name": "AVL",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 3,
+		"name": "Birmingham City",
+		"short_name": "BIR",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 4,
+		"name": "Brighton",
+		"short_name": "BHA",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 5,
+		"name": "Charlton Athletic",
+		"short_name": "CHA",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 6,
+		"name": "Chelsea",
+		"short_name": "CHE",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 7,
+		"name": "Crystal Palace",
+		"short_name": "CRY",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 8,
+		"name": "Everton",
+		"short_name": "EVE",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 9,
+		"name": "Liverpool",
+		"short_name": "LIV",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 10,
+		"name": "London City Lionesses",
+		"short_name": "LCL",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 11,
+		"name": "Manchester City",
+		"short_name": "MNC",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 12,
+		"name": "Manchester United",
+		"short_name": "MNU",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 13,
+		"name": "Tottenham Hotspur",
+		"short_name": "TOT",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	},
+	{
+		"id": 14,
+		"name": "West Ham United",
+		"short_name": "WHU",
+		"strength": 5,
+		"strength_overall_home": 300,
+		"strength_overall_away": 300,
+		"strength_attack_home": 300,
+		"strength_attack_away": 300,
+		"strength_defence_home": 300,
+		"strength_defence_away": 300
+	}
+]
+}

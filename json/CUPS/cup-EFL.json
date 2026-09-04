@@ -1,0 +1,54 @@
+[		
+	{ 	"title": "IN", 		"data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ] },
+	{	"title": "OUT", 	"data": [] },
+	{ 	"title": "evntTp", 	"data": "evtp-EFL" },
+	{ 	"title": "GAMEWEEKS", "data": [] },
+	{
+		"title": "FINAL",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	},
+	{
+		"title": "SF",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	},
+	{
+		"title": "QF",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	},
+	{
+		"title": "L16",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	},
+	{
+		"title": "L32",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	},
+	{
+		"title": "L64",
+		"gw": 27,
+		"date": "",
+		"elim": [],
+		"drawn": false,
+		"data":	[]
+	}
+]

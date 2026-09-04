@@ -1,4 +1,4 @@
-WSL 25/26
+WSL 26/27
 
 Fantasy WSL team calendar. Choose which rounds to show, how many rounds to show, change difficulty per team for future fixtures.
 
